@@ -286,7 +286,26 @@ export default function ResourcesPage() {
               </Link>
             </CardFooter>
           </Card>
-
+          
           <div className="mt-8 rounded-lg border bg-white p-6 shadow-sm">
-            \
-
+            <h3 className="mb-4 text-xl font-bold">Additional Resources</h3>
+            <p className="mb-4">
+              Explore more safety resources and educational materials to help keep your community safe.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Button variant="outline" className="flex items-center gap-2">
+                <FileText className="h-4 w-4" /> Safety Guidelines
+              </Button>
+              <Button variant="outline" className="flex items-center gap-2">
+                <Download className="h-4 w-4" /> Training Materials
+              </Button>
+              <Button variant="outline" className="flex items-center gap-2">
+                <Video className="h-4 w-4" /> Educational Videos
+              </Button>
+            </div>
+          </div>
+        </TabsContent>
+      </Tabs>
+    </div>
+  )
+}
